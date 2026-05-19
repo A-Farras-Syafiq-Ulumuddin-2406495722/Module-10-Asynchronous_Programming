@@ -105,6 +105,7 @@ fn main() {
         println!("Farras's Computer: dowdy!");
     });
 
+    
     // Drop the spawner so that our executor knows it is finished and won't
     // receive more incoming tasks to run.
     drop(spawner);
@@ -112,4 +113,6 @@ fn main() {
     // Run the executor until the task queue is empty.
     // This will print "howdy!", pause, and then print "done!".
     executor.run();
+
+    println!("Farras's Computer: Cowdy!");
 }
